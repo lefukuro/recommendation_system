@@ -20,14 +20,16 @@ Increase user engagement by providing relevant content recommendations using his
 - Feature importance analysis
 
 ## 🏗️ Project Structure
-recommendation-system/
-├── notebooks/
-│ └── main_analysis.ipynb
-├── src/
-│ ├── data_preprocessing.py
-│ └── model_training.py
-├── requirements.txt
-└── README.md
+recommendation_system/
+├── 📓 notebooks/
+│   └── recommendation-system-catboost.ipynb          # EDA and Model training
+├── 🚀 src/
+│   └── model_conn.py                                 # FastAPI server
+├── 📁 models/
+│   └── catboost_model.cbm                            # Trained CatBoost model (model weight)
+├── 📋 requirements.txt
+├── 📖 README.md
+└── 🔧 .gitignore
 
 ## 📈 Results
 - **DCG@5 Score**: 1.1687
