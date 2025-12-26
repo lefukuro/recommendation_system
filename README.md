@@ -9,32 +9,19 @@ Increase user engagement by providing relevant content recommendations using his
 ## 🛠️ Technical Stack
 - **Python** (pandas, numpy, scikit-learn)
 - **CatBoost** for gradient boosting
-- **TF-IDF** for text processing
+- **NLTK and TF-IDF** for text processing
 - **PCA** for dimensionality reduction
 
 ## 📊 Key Features
-- Data preprocessing and feature engineering
+- EDA, Data preprocessing and feature engineering
 - Advanced text processing with TF-IDF and PCA
 - Hyperparameter tuning with RandomizedSearchCV
-- Recommendation quality evaluation using DCG metric
+- Recommendation quality evaluation using ROC-AUC metric
 - Feature importance analysis
 
-## 🏗️ Project Structure
-recommendation_system/
-├── 📓 notebooks/
-│   └── recommendation-system-catboost.ipynb          # EDA and Model training
-├── 🚀 src/
-│   └── model_conn.py                                 # FastAPI server
-├── 📁 models/
-│   └── catboost_model.cbm                            # Trained CatBoost model (model weight)
-├── 📋 requirements.txt
-├── 📖 README.md
-└── 🔧 .gitignore
-
 ## 📈 Results
-- **DCG@5 Score**: 1.1687
-- **Efficiency**: 95.7% of theoretical maximum
-- **Key drivers**: User engagement history, content topics, user data, text features
+- **ROC-AUC Score**: 0.691
+- **Key drivers**: User engagement history, content topics, user data, text features, user-topic interactions features
 
 ## 🚀 Quick Start
 ```bash
